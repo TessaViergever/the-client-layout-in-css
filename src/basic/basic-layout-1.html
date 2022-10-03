@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer"
+      }
+
+      header {
+       grid-area: header;
+      }
+
+      nav {
+      grid-area: nav;
+      }
+
+      main {
+       grid-area: main; 
+      }
+
+      footer {
+      grid-area: footer;
+      }
     </style>
   </head>
+
+
+
   <body id="basic-layout-1">
     <header><h1>Basic Layout 1</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
